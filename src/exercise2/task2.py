@@ -10,8 +10,11 @@ try:
             n_list.append(digit)
             number //= 10
 
-    if n_list == n_list[::-1]:
-        result = True
+    if n_list != []:
+        if n_list == n_list[::-1]:
+            result = True
+        else:
+            result = False
     else:
         result = False
     print(result)
